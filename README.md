@@ -2,6 +2,8 @@
 
 Send stats from sportid.ee to Datadog.
 
+![Screenshot from Datadog](/screenshot.png?raw=true)
+
 ## Requirements
 
 - Docker
