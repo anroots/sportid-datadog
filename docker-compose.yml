@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  app:
+    build: .
+    image: anroots/sportid-datadog
+    restart: on-failure:20
+    environment:
+      # Datadog API key
+      API_KEY: 
+      # Datadog APP key
+      APP_KEY: 
+      # sportid_session value (browser cookie)
+      COOKIE: 
+      # Host name (used by Datadog)
+      HOST: 
+      # Interval (in seconds) of data points
+      INTERVAL: 300
+    hostname: datadog.test.big.local
