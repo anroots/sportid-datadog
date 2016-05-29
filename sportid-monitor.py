@@ -98,9 +98,10 @@ if __name__ == "__main__":
 
   # Run the main loop every X seconds
   try:
-    i = environ.get('INTERVAL', 20)
+    interval = int(environ.get('INTERVAL', 20))
+    i = interval
     while True:
-      if i >= environ.get('INTERVAL', 20):
+      if i >= interval:
         i = 0
         logging.info('Time to refresh stats...')
         main()
